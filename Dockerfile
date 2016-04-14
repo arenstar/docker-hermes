@@ -1,7 +1,8 @@
-FROM debian:jessie
-ENV HERMES_VERSION 1.9
+FROM alpine:3.3
 
-RUN apt-get update && apt-get -y install libssl-dev libspf2-dev make git curl bzip2 g++ pkg-config libsqlite3-dev  && rm -rf /var/lib/apt/lists/*
+RUN apk add --update openssl-dev libspf2-dev sqlite-dev sqlite-libs make git curl g++ automake autoconf
+
+ENV HERMES_VERSION 1.9
 
 RUN cd /tmp && curl http://www.hermes-project.com/files/hermes-${HERMES_VERSION}.tar.bz2 | tar -jx
 

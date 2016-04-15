@@ -15,6 +15,8 @@ To run it:
 
 ### Configure hermesrc
 
+Refer to the [documentation](http://www.hermes-project.com/pages/config-options) for all configuration options
+
 ````
 background = false
 
@@ -43,4 +45,4 @@ file_logger_filename = "/dev/stdout"
 # Add tagged header "X-Hermes-Status: {white,black}listed"
 add_status_header = true
 `````
-Refer to the documentation for full cofiguration options - http://www.hermes-project.com/pages/installing-hermes
+
